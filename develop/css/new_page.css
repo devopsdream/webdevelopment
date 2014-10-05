@@ -1,0 +1,42 @@
+#header{
+	background-image: url('../images/header.png');
+	background-repeat: no-repeat;
+	width: 1001px;
+	height: 123px
+
+}
+#nav{
+	background-image: url('../images/nav_bar.png');
+	background-repeat: no-repeat;
+	width: 1001px;
+	height: 43px;
+}
+
+#side_menu{
+	background-image: url('../images/side_menu.png');
+	background-repeat: no-repeat;
+	width: 207px;
+	height: 400px;
+	float: left;
+}
+
+#content{
+	background-image: url('../images/content.png');
+	background-repeat: no-repeat;
+	width: 777px;
+	height: 480px;
+	float: right;
+}
+#footer{
+	background-image: url('../images/footer.png');
+	background-repeat: no-repeat;
+	width: 1024px;
+	height: 44px;
+	float: bottom;
+}
+#wrap{
+	background-color: red;
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Order Form</title>
+</head>
+
+<body>
+<form action="processorder.php" method="post">
+	<table>
+    	 <tr bgcolor="#999999">
+        	<td width="150">Item</td>
+        	<td width="50">Quantity</td>
+         </tr>
+        <tr>
+       		<td>Tires</td>
+       <!-- 	<td align="center"><input type="text" name="tireqty" size="3" maxlength="3"></td>-->
+		<td align="center"><input type="text" name="tireqty" size="3" maxlength="3"></td>
+        </tr>
+        <tr>
+       		<td>Oil</td>
+       		 <td align="center"><input type="text" name="oilqty" size="3" maxlength="3"></td>
+        </tr>
+        <tr>
+       		<td>Spark Plugs</td>
+       		<td align="center"><input type="text" name="sparkqty" size="3" maxlength="3"></td>
+        </tr>
+        <tr>
+        <td>How did you find bob?</td>
+        <td><select name="find">
+        	<option value = "a">I am a regular customer</option>
+        	<option value = "b">TV advertising</option>
+        	<option value = "c">Phone directory</option>
+        	<option value = "d">Word of mouth</option>
+        	</select>
+        	</td>
+        </tr>
+        <tr>
+                <td colspan="2"><input type="submit" value="submitorder"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
