@@ -1,0 +1,65 @@
+/* Global*/
+h1 {
+	text-align: center;
+	font-family: 'Shadows Into Light',sans-serif;
+	color: #fff;
+	margin: 0;
+	padding-top: 5;
+	font-weight: bold;
+}
+/* Remove Underlines from all links*/
+a {
+	text-decoration: none;
+}
+a:visited{
+	text-decoration: blink;
+}
+body {
+	margin-left: 0 auto;
+}
+/*********************************************
+*NAVIGATION
+**********************************************/
+nav {
+	background-color: #2E8A2E;
+	min-height: 40px;
+	text-align: center;
+}
+nav  li {
+	list-style-type: none;
+	display: inline-block;
+	font-weight: 800px;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	margin:0 20px 0;
+	padding-top: 8;
+	border-right: 1px solid #005900;
+	padding-right: 10;
+
+}
+
+/**********************************************
+*HEADER 
+***********************************************/
+header {
+	background-color: #50A550;
+}
+html{
+	background-color: #EEEEEE;
+}
+/*Google fonts*
+<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light|Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+font-family: 'Montserrat', sans-serif;
+*/
+footer {
+	text-align: center;
+}
+/************************************************
+* FOOTER
+*************************************************/
+footer {
+	background-color: #50A550;
+}

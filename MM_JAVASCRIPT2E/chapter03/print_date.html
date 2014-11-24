@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Using Functions</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link href="../_css/site.css" rel="stylesheet">
+<script>
+function printToday(){
+  var today = new Date();
+  document.write(today.toDateString());
+}
+</script>
+
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="header">
+    <p class="logo">JavaScript <i>&</i> jQuery <i class="mm">The<br>
+      Missing<br>
+      Manual</i></p>
+  </div>
+  <div class="content">
+    <div class="main">
+      <h1 id="main_heading">Using Functions</h1>
+      <script type="text/javascript">
+      $(document).ready(function(){
+        $('#main_heading').html('<h1>JavaScript was here</h1>');});
+      </script>
+      <p>Today is <strong><script type="text/javascript">printToday();</script></strong></p>
+    </div>
+  </div>
+  <div class="footer">
+    <p>JavaScript &amp; jQuery: The Missing Manual, by <a href="http://sawmac.com/">David McFarland</a>. Published by <a href="http://oreilly.com/">O'Reilly Media, Inc</a>.</p>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+/*@media screen and (device-aspect-ratio: 2/3)*/
+@media screen and (max-device-width:410px){
+	header h1 {
+		padding-left: 5;
+		font-size: 20;
+	}
+	footer {
+		text-align: center;
+	}
+	nav li {
+		font-size: 10;
+		text-align: center;
+	}
+	nav li.nth-child(3){
+		clear:left;
+	}
+}

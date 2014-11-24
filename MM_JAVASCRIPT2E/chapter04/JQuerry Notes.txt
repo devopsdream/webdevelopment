@@ -1,0 +1,38 @@
+#selecting elements and tags in using Jquery;
+$(selector)
+
+#selecting elements using their id's [<div id="name">]
+$('#name') ==> This selects the div that has an ID of "name"
+
+#selecting elements using their css class names [<div class=".name">]
+$('.name') ==> This selects the div that has a class of name ".name"
+
+#lets write some code to hide some Jquery
+
+#select a div with id name
+$('#name').hide() This hides the element with an id of #name
+
+###ADVANCED SELECTORS####
+#########################
+1.Descendant selectors:
+Targets a tag inside another tag.
+<ul id="navBar">
+code:
+$('#navBar a')
+This is just like using CSS
+2.Child selector:
+Target a tag that is the child of another tag.
+$('body > p')
+3.Selecting tags with a certain attribute.
+	1.$('a[href]') ==> selects links with the href attributes.
+	2.$('input[type="text"]') ==>selects form elemnts input of type text;
+	3.$('a[href^="http://"]') ==>selects links with attributes that begin with http://
+	4.$('a[href$=".pdf"]') ==>selects links that end with the extension .pdf
+
+####JQuery Filters######
+$('tr:even') ==> selects even table rows
+$('p:first') ==> selects the first paragraph on a page
+$('a:contains('Click Me!')') ==> Finds links that has the text Click mem
+
+##JQuerry Chaining Functions####
+$('#popUp').width(300).height('300') ==> Chaining functions without running multiple lines of code. This code changes the width height of a element with an id od popUp.
