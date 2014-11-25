@@ -1,3 +1,17 @@
+<?php
+if ($_SERVER['REQUEST_METHOD'] == "POST"){
+	$name = $_POST['name'];
+	$email = $_POST['email'];
+	$message = $_POST['message'];
+	$email_body = "";
+	$email_body = $email_body . "Name: " . $name . "\n";
+	$email_body = $email_body . "Email: " . $email . "\n";
+	$email_body = $email_body . "Message: " . $message;
+
+	// TODO Send Email
+	header("Location: contact-thanks.php");
+}
+?>
 <?php 
 $pageTitle = "Contact Mike";
 include('inc/header.php'); ?>
@@ -6,35 +20,36 @@ include('inc/header.php'); ?>
 <div class="wrapper"></div>
 <h1>Contact</h1>
 <p>I&rsquo;d love to hear from you! Complete the form to send him an email.</p>
-<form method="post" action="contact-process.php">
-	<table>
-	<tr>
-	<th>
-		<label for="name">Name: </label>
-	</th>
-	<td>
-		<input type="text" name="name" id="name">
-	</td>
-	</tr>
-	<tr>
-	<th>
-		<label for="email">Email: </label>
-	</th>
-	<td>
-		<input type="text" name="email" id="email">
-	</td>
-	</tr>
-	<tr>
-	<th>
-		<label for="message">Message: </label>
-	</th>
-	<td>
-		<textarea name="message" id="message"></textarea>
-	</td>
-	</tr>
-	</table>
-	<input type="submit" value="send">
-</form>
+	<form method="post" action="contact.php">
+		<table>
+		<tr>
+		<th>
+			<label for="name">Name: </label>
+		</th>
+		<td>
+			<input type="text" name="name" id="name">
+		</td>
+		</tr>
+		<tr>
+		<th>
+			<label for="email">Email: </label>
+		</th>
+		<td>
+			<input type="text" name="email" id="email">
+		</td>
+		</tr>
+		<tr>
+		<th>
+			<label for="message">Message: </label>
+		</th>
+		<td>
+			<textarea name="message" id="message"></textarea>
+		</td>
+		</tr>
+		</table>
+		<input type="submit" value="send">
+	</form>
 </div>
+
 
 <?php include 'inc/footer.php';?>
